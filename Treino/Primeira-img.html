@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treino</title>
+    <style>
+        div#area {font: normal 50px icon;
+        background: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        height: 200px;
+        width: 200px;
+        line-height: 200px;
+        text-align: center;
+        padding-left: 100px;
+        padding-right: 100px;
+        border-style: double;
+        border-radius: 10px;
+        margin-top: 760px;
+        background-color: rgb(255, 255, 255);
+        }
+
+        div#WrapperArea {width: 1341px;
+        height: 965px;
+        justify-content: center;
+        display: flex;
+        border-color: rgb(46, 53, 51);
+        border-style: double;
+        padding: 0px;
+        padding-top: 0px;
+        background-color: rgb(255, 255, 255);
+        }
+
+        div#centro {
+            width: 1890px;
+            justify-content: center;
+            display: flex;
+            font: normal 70px italic;
+            margin-top: 10px;
+            background-color: rgb(255, 255, 255);
+        }
+      
+    </style>
+</head>
+<body>
+    <img src="https://u.motoscdn.com.br/websites/3NFTJR/pages/OW0GA4R2/ID54RNK0P6HS/image/4394/conversions/BANNER-DR-160-desktop.jpg?v=1ac4912c"
+    style="width: 1890px;
+    height: 502px;
+    padding-left: 18px;">
+    <div id= 'centro'>
+        <div id= 'WrapperArea'>
+            <div id= 'area' title="Novo">Rafael
+            </div>
+        </div>
+    <script>
+        var a = window.document.getElementById('area')
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        function clicar(){
+            a.innerHTML = 'Bem'
+            a.style.background = 'rgb(86, 224, 183)'
+            a.style.color = 'black'
+        }
+        function entrar() {
+            a.innerHTML = 'Seja'
+            a.style.background = 'rgb(86, 224, 183)'
+            a.style.color = 'black'
+        }
+        function sair() {
+            a.innerHTML = 'Vindo(a)'
+            a.style.background = 'rgb(86, 224, 183)'
+            a.style.color = 'black'
+        }
+
+    </script> 
+</body>
+</html>

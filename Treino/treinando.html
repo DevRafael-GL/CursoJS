@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Treinando</title>
+    <style>
+       div#area {
+           background:darkslategrey;
+           font: normal 50px italic;
+           height: 500px;
+           width: 500px;
+           line-height: 500px;
+           text-align: center;}
+    </style>
+</head>
+<body>
+  <div id="area">Mano</div>
+  <script>
+      var a = window.document.getElementById('area')
+      a.addEventListener('click',clicar)
+      a.addEventListener('mouseenter',entrar)
+      a.addEventListener('mouseout',sair)
+      function clicar() {
+          a.innerText = 'Por me apresentar'
+          a.style.background = 'yellow'
+          a.style.color = 'black'}
+      function entrar() {
+          a.innerText = 'Muito obrigado'
+          a.style.background = 'red'
+          a.style.color = 'white'}
+      function sair() {
+          a.innerText = 'a programação'
+          a.style.background = 'darkslategray'
+          a.style.color = 'white'}    
+  </script>  
+</body>
+</html>
