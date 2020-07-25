@@ -9,19 +9,23 @@
     <style>
         
         body {
-            background-color: darkolivegreen;
-            color: rgb(216, 210, 198);
-            font:normal 30px italic;
-            text-align: center};
+            background-color: rgb(15, 135, 216);
+            color: rgb(0, 0, 0);
+            font:normal 20px italic;
+            text-align: center
+            };
         input {font: normal 30px italic;
         width: 100px
         }
+        div#res{
+            align-items: center;
+        }
     </style>
    <h1>Somando Valores</h1>
-   <input class="gLFyf gsfi" maxlength="2048" name="txtn1" type="number" id="txtn1" jsaction="paste:puy29d" aria-autocomplete="both" aria-haspopup="false" autocapitalize="off" autocomplete="off" autocorrect="off" autofocus="" role="combobox" spellcheck="false" title="Somar" value="" aria-label="Pesquisar" data-ved="0ahUKEwji4MnUl7DqAhUaknIEHYBuB3kQ39UDCAQ">
-   <input type="number" name="txtn2" id="txtn2" title="Somar">
+   <input type="number" name="txtn1" id="txtn1"> +
+   <input type="number" name="txtn2" id="txtn2" title="Somar"> 
    <input type="button" value="Somar" onclick="somar()">
-   <div id="res">Resultado</div>
+   <div id="res"><strong>Resultado</strong></div>
    <script>
        function somar() {
            var tn1 = window.document.getElementById('txtn1')
