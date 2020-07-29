@@ -51,7 +51,7 @@ function finalizar(){
         }
         media = soma / total
         res.innerHTML = ''
-        res.innerHTML += `<p>Ao todo temos ${total} números cadastrados</p>`
+        res.innerHTML += `<p>Ao todo temos ${total} números cadastrados.</p>`
         res.innerHTML += `<p>O maior valor adicionado foi ${maior}. </p>`
         res.innerHTML += `<p>O menor valor adicionado foi ${menor}. </p>`
         res.innerHTML += `<p>Somando todos os valores temos ${soma}. </p>`
