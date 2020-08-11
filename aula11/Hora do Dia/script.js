@@ -1,11 +1,15 @@
-function carregar(){
+function carregar() {
     var msg = window.document.getElementById('msg')
     var img = window.document.getElementById('imagem')
     var data = new Date()
     var hora = data.getHours()
     var minutos = data.getMinutes()
+    // Acescentando "0" em minutos abaixo te 10
+    if(minutos.toString().length == 1)minutos = '0'+minutos;  
+    if(hora.toString().length == 1)hora = '0'+hora;
+          
     msg.innerHTML = `Agora são ${hora}:${minutos} horas.`
-    if (hora >=0 && hora < 12) {
+    if (hora >=6 && hora < 12) {
         //Bom Dia!
         document.body.style.background = 'rgb(129, 202, 250)'
         img.src = 'fotomanha.png'
