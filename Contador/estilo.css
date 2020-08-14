@@ -1,6 +1,6 @@
 body{
 background-color:#5c9fd8;
-font: normal 15pt Arial;
+font: 500 15pt Arial;
 }
 
 header{
@@ -14,7 +14,7 @@ border-radius: 10px;
 padding: 15px;
 width: 500px;
 margin: auto;
-box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.384);
+box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.384);
 
 }
 
