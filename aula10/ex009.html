@@ -1,31 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Detran</title>
-</head>
-<body>
+  </head>
+  <body>
     <style>
-        body {
-            background-color: rgb(184, 179, 173);
-        }
+      body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: rgb(230, 229, 228);
+        font-size: 2rem;
+        color: rgb(63, 39, 39);
+      }
+      .title {
+        display: flex;
+        justify-content: center;
+        color: #5b1f28;
+        font-size: 1.6rem;
+      }
     </style>
-  <h1>Sistema de multas </h1> 
-  Velocidade do carro <input type="number" name="txtvel" id="txtvel"> km/h
-  <input type="button" value="Verificar" onclick="calcular()">
-  <div id= 'res'></div>
-  <script>
-     function calcular() {
-         var txtv = document.getElementById('txtvel')
-         var res = document.querySelector('div#res')
-         var vel = Number (txtv.value)
-         res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}<strong><p>`
-         if (vel > 110) {
-             res.innerHTML += '<p>Você está <strong>MULTADO<strong> por excesso de velocidade<p.'
-         }
-         res.innerHTML += '<p>Use <strong>sempre<strong> cinto de segurança!<p>'
-         }
-  </script>
-</body>
+    <div class="main">
+      <div class="title"><h1>Sistema de multas</h1></div>
+      Velocidade do carro <input type="number" name="txtvel" id="txtvel" /> km/h
+      <input type="button" value="Verificar" onclick="calcular()" />
+      <div id="res"></div>
+    </div>
+    <script>
+      function calcular() {
+        var txtv = document.getElementById("txtvel");
+        var res = document.querySelector("div#res");
+        var vel = Number(txtv.value);
+        res.innerHTML = `<p>Sua velocidade atual é de <strong>${vel}<strong><p>`;
+        if (vel > 110) {
+          res.innerHTML +=
+            "<p>Você está <strong>MULTADO<strong> por excesso de velocidade<p.";
+        }
+        res.innerHTML += "<p>Use <strong>sempre<strong> cinto de segurança!<p>";
+      }
+    </script>
+  </body>
 </html>
