@@ -1,19 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body {font: normal 30pt italic}
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+          width: 100vw;
+          height: 100vh;
+        font: normal 30pt arial;
+        background: linear-gradient(339.54deg, #7e8180 40%, #eeeeee 100%)
+          no-repeat;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+ 
+      }
+
+      .content {
+        background: #7e8180f3;
+        color: #000000e0;
+        width: 72rem;
+        height: 15rem;
+        border-radius: 1rem;
+        padding-top: 1rem;
+        text-align: center;
+        overflow-y: scroll;
+      }
+
+      .content::-webkit-scrollbar {
+          width: 12px;
+      }
+
+      .content::-webkit-scrollbar-thumb {
+  background: #5e5e5e;
+  border-left: 4px solid #3b3b3b73;
+  border-right: 4px solid #3b3b3b73;
+}
+
     </style>
-</head>
-<body>
-<script>
-var nome = window.prompt ('Qual é o teu nome')
-document.write(`Olá, <strong>${nome}</strong>! Seu nome tem ${nome.length} letras <br/>`) 
-document.write(`Seu nome maiúsculo é <strong>${nome.toUpperCase()}</strong><br/>`) 
-document.write(`seu nome minúscolo é <strong>${nome.toLowerCase()}</strong>`)    
-</script>    
-</body>
+  </head>
+  <body>
+    <div class="content">s</div>
+    <script>
+      const nome = window.prompt("Qual é o teu nome");
+      const content = document.querySelector(".content");
+
+      content.innerHTML = `Olá, <strong>${nome}</strong>! Seu nome tem ${
+        nome.length
+      } letras. <br/>
+Seu nome maiúsculo é <strong>${nome.toUpperCase()}</strong>.<br/>
+seu nome minúscolo é <strong>${nome.toLowerCase()}</strong>.
+`;
+    </script>
+  </body>
 </html>
